@@ -5,6 +5,25 @@
 "" set <name>? show the value
 "" set list& reset  
 """"""""""""""""""""""""""""""""""""""""
+set nocompatible
+filetype off
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+Bundle 'gmarik/vundle'
+Bundle 'tpope/vim-fugitive'
+Bundle 'Lokaltog/vim-easymotion'
+Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
+Bundle 'tpope/vim-rails.git'
+Bundle 'L9'
+Bundle 'FuzzyFinder'
+Bundle 'git://git.wincent.com/command-t.git'
+Bundle "MarcWeber/vim-addon-mw-utils"
+Bundle "tomtom/tlib_vim"
+Bundle "honza/snipmate-snippets"
+Bundle "garbas/vim-snipmate"
+
 set wrap 
 "" Show Line and number in status bar
 filetype plugin indent on
@@ -34,5 +53,5 @@ syntax enable
 "" Always show the status bar
 set laststatus=2
 colorscheme desert
-"" Mostrar as linhas
+"" Show Lines
 "" set number
