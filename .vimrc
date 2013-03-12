@@ -15,8 +15,9 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-fugitive'
 Bundle 'Lokaltog/vim-easymotion'
 Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'tpope/vim-rails.git'
+Bundle 'rails.vim'
 Bundle 'L9'
+Bundle 'surround.vim'
 Bundle 'FuzzyFinder'
 Bundle 'git://git.wincent.com/command-t.git'
 Bundle "MarcWeber/vim-addon-mw-utils"
@@ -24,9 +25,11 @@ Bundle "tomtom/tlib_vim"
 Bundle "honza/snipmate-snippets"
 Bundle "garbas/vim-snipmate"
 
+set history=256
 set wrap 
 "" Show Line and number in status bar
 filetype plugin indent on
+set showcmd " Display an incomplete command in the lower right corner of the Vim window
 set ruler
 "" 3 lines of context around the cursor.
 set scrolloff=3
@@ -52,6 +55,12 @@ set hidden
 syntax enable 
 "" Always show the status bar
 set laststatus=2
+
+set showmatch  " Show matching brackets.
+
+nmap <C-R> :FufTag<CR>
+nmap <C-E> :FufFile<CR>
+
 colorscheme desert
 "" Show Lines
 "" set number
