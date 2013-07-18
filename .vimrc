@@ -58,9 +58,18 @@ set laststatus=2
 
 set showmatch  " Show matching brackets.
 
-nmap <C-R> :FufTag<CR>
-nmap <C-E> :FufFile<CR>
+"" Sublime Style mapping  for FuzzyFinder
+nmap <C-A> :FufTag<CR>
+nmap <C-F> :FufFile<CR>
+nmap <C-R> :FufBufferTag<CR>
+
+"" Toggle NerdTree
+map  <C-X> :NERDTreeToggle<CR>
 
 colorscheme desert
+
 "" Show Lines
 "" set number
+
+"" Path for Ctags files
+set tags=./.tags;/
