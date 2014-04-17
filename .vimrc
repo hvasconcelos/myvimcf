@@ -1,34 +1,34 @@
 """""""""""""""""""""""""""""""""""""""""
-"" Helder Vasconcelos Vim Configuration file 
-"" set <nome> boolean on
-"" set no<nome> boolean off
-"" set <name>? show the value
-"" set list& reset  
+"" Helder Vasconcelos
+"" Bearstouch Software 2014
+"" heldervasc@bearstouch.com
 """"""""""""""""""""""""""""""""""""""""
-set nocompatible
-filetype off
+set nocompatible              " be iMproved, required
+filetype off                  " required
 
+" set the runtime path to include Vundle and initialize
 set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
-Bundle 'gmarik/vundle'
-Bundle 'tpope/vim-fugitive'
-Bundle 'Lokaltog/vim-easymotion'
-Bundle 'rstacruz/sparkup', {'rtp': 'vim/'}
-Bundle 'rails.vim'
-Bundle 'L9'
-Bundle 'surround.vim'
-Bundle 'FuzzyFinder'
-Bundle 'git://git.wincent.com/command-t.git'
-Bundle "MarcWeber/vim-addon-mw-utils"
-Bundle "tomtom/tlib_vim"
-Bundle "honza/snipmate-snippets"
-Bundle "garbas/vim-snipmate"
+Plugin 'gmarik/vundle'
+Plugin 'tpope/vim-fugitive'
+Plugin 'Lokaltog/vim-easymotion'
+Plugin 'rstacruz/sparkup', {'rtp': 'vim/'}
+Plugin 'rails.vim'
+Plugin 'L9'
+Plugin 'surround.vim'
+Plugin 'FuzzyFinder'
+Plugin 'git://git.wincent.com/command-t.git'
+Plugin 'MarcWeber/vim-addon-mw-utils'
+Plugin 'tomtom/tlib_vim'
+Plugin 'honza/snipmate-snippets'
+Plugin 'garbas/vim-snipmate'
+
+filetype plugin indent on
 
 set history=256
 set wrap 
 "" Show Line and number in status bar
-filetype plugin indent on
 set showcmd " Display an incomplete command in the lower right corner of the Vim window
 set ruler
 "" 3 lines of context around the cursor.
@@ -40,11 +40,11 @@ set novisualbell
 set nobackup
 set nowritebackup
 "" Indent width 
-set tabstop=2
+set tabstop=4
 "" Indent width 
-set shiftwidth=2
+set shiftwidth=4
 "" Number of spaces for a tab
-set sts=2 
+set sts=4
 "" Intuitive backspacing.
 set backspace=indent,eol,start
 set expandtab 
@@ -55,7 +55,6 @@ set hidden
 syntax enable 
 "" Always show the status bar
 set laststatus=2
-
 set showmatch  " Show matching brackets.
 
 "" Sublime Style mapping  for FuzzyFinder
@@ -67,9 +66,8 @@ nmap <C-R> :FufBufferTag<CR>
 map  <C-X> :NERDTreeToggle<CR>
 
 colorscheme desert
-
 "" Show Lines
 "" set number
 
-"" Path for Ctags files
+"" Ctags file path
 set tags=./.tags;/
