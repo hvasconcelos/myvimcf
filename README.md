@@ -1,4 +1,4 @@
-My VIM Configuration Files
+My VIM  Files
 ================================
 
 Plugins :
